@@ -59,9 +59,10 @@
         e.preventDefault();
         var button = $(this).hide(),
         pageNum = Number(button.attr("data-page")),
+        totalCount = button.attr("data-total-count");
         url = button.attr("data-url"),
         ajaxLoader = $('#endless-paging').show(),
-        m = url + "/archive/" + (pageNum + 1);
+        m = url + "/archive/" + (pageNum + 1) + "/" + totalCount;
 
         endlessPagingHandler(m, $("#issues-list"), null);
     });

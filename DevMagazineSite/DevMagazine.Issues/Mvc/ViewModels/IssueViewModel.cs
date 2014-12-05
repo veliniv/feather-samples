@@ -6,7 +6,6 @@ using DevMagazine.Core.Modules.Libraries.Documents.ViewModels;
 using DevMagazine.Core.Modules.Shared.ViewModels;
 using DevMagazine.Core.Modules.Libraries.Images.ViewModels;
 using Telerik.Sitefinity.Utilities.TypeConverters;
-using Telerik.Sitefinity.DynamicModules.Model;
 using DevMagazine.Core.Modules.Libraries.Images;
 using DevMagazine.Core.Modules.Libraries.Documents;
 using Telerik.Sitefinity.RelatedData;
@@ -168,7 +167,7 @@ namespace DevMagazine.Issues.Mvc.ViewModels
         /// </summary>
         /// <param name="item">The item.</param>
         /// <returns></returns>
-        public static IssueViewModel GetIssue(DynamicContent item)
+        public static IssueViewModel GetIssue(Telerik.Sitefinity.DynamicModules.Model.DynamicContent item)
         {
             IssueViewModel issue = new IssueViewModel();
 
