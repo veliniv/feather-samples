@@ -2,6 +2,4 @@ language: csharp
 solution: ./AuthorWidget/AuthorWidget.sln
 
 install:
-  - sudo apt-get install -y gtk-sharp2
-  - nuget restore AuthorWidget/AuthorWidget.sln
   - nuget update AuthorWidget/AuthorWidget.sln -source "http://nuget.sitefinity.com/nuget/"
