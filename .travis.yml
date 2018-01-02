@@ -2,4 +2,4 @@ language: csharp
 solution: AuthorWidget.sln
 
 install:
-  - nuget update-package Telerik.Sitefinity.Feather.Core -version 10.2.6602 AuthorWidget.sln
+  - nuget update Telerik.Sitefinity.Feather.Core -version 10.2.6602 AuthorWidget.sln
