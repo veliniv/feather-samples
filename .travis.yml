@@ -1,5 +1,5 @@
 language: csharp
-solution: AuthorWidget.sln
+solution: ./AuthorWidget/AuthorWidget.sln
 
 install:
-  - nuget update AuthorWidget.sln -source "http://nuget.sitefinity.com/nuget/"
+  - nuget update ./AuthorWidget/AuthorWidget.sln -source "http://nuget.sitefinity.com/nuget/"
