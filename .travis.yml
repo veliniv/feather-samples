@@ -3,7 +3,7 @@ solution: ./AuthorWidget/AuthorWidget.sln
 
 before_install:
   - sudo apt-get -qq update
-  - nuget restore AuthorWidget/AuthorWidget.sln -source "http://nuget.sitefinity.com/nuget/"
+  - nuget restore AuthorWidget/AuthorWidget.sln
 
 install:
-  - nuget update AuthorWidget/AuthorWidget.sln -source "http://nuget.sitefinity.com/nuget/"
+  - nuget update AuthorWidget/AuthorWidget.sln
