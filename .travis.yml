@@ -2,6 +2,8 @@ language: csharp
 solution: ./AuthorWidget/AuthorWidget.sln
 
 before_install:
+  - nuget sources Add -Name "MyCustomSource" -source https://yournnugetserver.com/api/v3/
+  - nuget sources Add -Name "MyCustomSource" -source http://nuget.sitefinity.com/nuget/
   - sudo apt-get -qq update
   - nuget restore AuthorWidget/AuthorWidget.sln
 
