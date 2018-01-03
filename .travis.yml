@@ -6,6 +6,7 @@ before_install:
   - nuget sources Add -Name "MyCustomSource1" -source http://nuget.sitefinity.com/nuget/
   - sudo apt-get -qq update
   - nuget restore AuthorWidget/AuthorWidget.sln
+  - xbuild /p:Configuration=Release AuthorWidget/AuthorWidget.sln
 
 install:
   - nuget update AuthorWidget/AuthorWidget.sln
